@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { X, Globe, Mail } from 'lucide-react';
 import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa';
 import type { TeamMember } from '../data/members';
+import { getImageUrl } from '../utils/image';
 
 interface MemberProfileProps {
   member: TeamMember;
@@ -44,7 +45,7 @@ export default function MemberProfile({ member, onClose }: MemberProfileProps) {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="w-full aspect-[3/4] rounded-t-full rounded-b-xl overflow-hidden relative"
           >
-            <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+            <img src={getImageUrl(member.image)} alt={member.name} className="w-full h-full object-cover" />
           </motion.div>
           
           {/* Social Links Desktop */}

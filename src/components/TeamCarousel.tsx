@@ -3,6 +3,7 @@ import { motion, AnimatePresence, wrap } from 'framer-motion';
 import { members } from '../data/members';
 import type { TeamMember } from '../data/members';
 import { MoveLeft, MoveRight } from 'lucide-react';
+import { getImageUrl } from '../utils/image';
 
 interface TeamCarouselProps {
   onMemberSelect: (member: TeamMember) => void;
@@ -74,7 +75,7 @@ export default function TeamCarousel({ onMemberSelect }: TeamCarouselProps) {
             className="w-full h-full"
           >
             <div className="w-full h-full rounded-[100%] overflow-hidden">
-              <img src={members[leftIndex].image} alt={members[leftIndex].name} className="w-full h-full object-cover grayscale brightness-75" />
+              <img src={getImageUrl(members[leftIndex].image)} alt={members[leftIndex].name} className="w-full h-full object-cover grayscale brightness-75" />
             </div>
           </motion.div>
         </div>
@@ -92,7 +93,7 @@ export default function TeamCarousel({ onMemberSelect }: TeamCarouselProps) {
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={1}
-              onDragEnd={(e, { offset, velocity }) => {
+              onDragEnd={(_e, { offset, velocity }) => {
                 const swipe = swipePower(offset.x, velocity.x);
                 if (swipe < -swipeConfidenceThreshold) {
                   paginate(1);
@@ -103,7 +104,7 @@ export default function TeamCarousel({ onMemberSelect }: TeamCarouselProps) {
               className="w-full h-full absolute inset-0"
             >
               <div className="w-full h-full rounded-[100%] md:rounded-[100px] overflow-hidden relative border border-white/10 group-hover:border-white/30 transition-colors">
-                <img src={activeMember.image} alt={activeMember.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src={getImageUrl(activeMember.image)} alt={activeMember.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors" />
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                   <span className="px-6 py-2 bg-white/10 backdrop-blur-md rounded-full text-xs tracking-widest uppercase border border-white/20">View Profile</span>
@@ -127,7 +128,7 @@ export default function TeamCarousel({ onMemberSelect }: TeamCarouselProps) {
             className="w-full h-full"
           >
             <div className="w-full h-full rounded-[100%] overflow-hidden">
-              <img src={members[rightIndex].image} alt={members[rightIndex].name} className="w-full h-full object-cover grayscale brightness-75" />
+              <img src={getImageUrl(members[rightIndex].image)} alt={members[rightIndex].name} className="w-full h-full object-cover grayscale brightness-75" />
             </div>
           </motion.div>
         </div>

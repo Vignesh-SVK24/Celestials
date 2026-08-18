@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { getImageUrl } from '../utils/image';
+
 export default function Hero() {
   const title = "CELESTIAL";
   
@@ -89,7 +91,7 @@ export default function Hero() {
               transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <img 
-                src="/hero-celestial.jpg" 
+                src={getImageUrl('/hero-celestial.jpg')} 
                 alt="Celestial Crew of Six" 
                 className="w-full h-full object-cover object-center rounded-2xl shadow-2xl border border-white/10"
               />

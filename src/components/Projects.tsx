@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { projects } from '../data/projects';
+import { getImageUrl } from '../utils/image';
 
 export default function Projects() {
   return (
@@ -33,7 +34,7 @@ export default function Projects() {
                 className="w-full aspect-[4/5] overflow-hidden mb-8 bg-black/5 block cursor-pointer"
               >
                 <img 
-                  src={project.image} 
+                  src={getImageUrl(project.image)} 
                   alt={project.title} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]" 
                 />
