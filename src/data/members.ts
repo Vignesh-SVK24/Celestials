@@ -45,18 +45,20 @@ export const members: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Member Two",
-    role: "Full Stack Developer",
+    name: "Vignesh S",
+    role: "AI/ML & Game Developer",
     image: "/members/member-2.jpg",
-    bio: "Building robust, scalable applications from end to end. I specialize in the React ecosystem and modern backend architectures.",
-    skills: ["React", "Node.js", "TypeScript", "PostgreSQL", "Next.js", "Docker", "AWS"],
-    achievements: ["Open Source Contributor", "Top 1% Stack Overflow"],
+    bio: "Passionate AI learner and aspiring game developer focused on creating interactive games, intelligent systems, and creative software experiences.",
+    skills: ["Python", "JavaScript", "Machine Learning", "Game Development", "HTML5/CSS3", "React"],
+    achievements: ["AIML Student", "Passionate AI Learner", "Aspiring Game Developer"],
     experience: [
-      { year: "2026", title: "Full Stack Developer", description: "Architected the primary application infrastructure." },
-      { year: "2024", title: "Frontend Engineer", description: "Built scalable web interfaces for high-traffic sites." }
+      { year: "2026", title: "AI/ML Project Developer", description: "Developed intelligent algorithms and machine learning models." },
+      { year: "2025", title: "Game Developer", description: "Created interactive web games including Dino Run and Mystery Word." }
     ],
     projects: [
-      { title: "CloudBase", description: "Serverless backend management tool.", technologies: ["React", "Node.js", "AWS"], link: "#", github: "#" }
+      { title: "Tic Tac Toe Game", description: "A classic interactive Tic Tac Toe game with smooth gameplay and AI logic.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "#", github: "#" },
+      { title: "Mystery Word Game", description: "An engaging word guessing game with clue systems and dynamic difficulty.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "#", github: "#" },
+      { title: "Dino Run Game", description: "A fun browser-based endless runner game featuring collision detection and score tracking.", technologies: ["JavaScript", "Canvas API", "CSS3"], link: "#", github: "#" }
     ],
     linkedin: "#", instagram: "#", github: "#", portfolio: "#", email: "mailto:hello@example.com"
   },
