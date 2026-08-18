@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-32 md:py-48 bg-black text-white flex items-center justify-center text-center px-6">
+    <section id="contact" className="py-20 sm:py-32 md:py-48 bg-black text-white flex items-center justify-center text-center px-5">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -11,10 +11,10 @@ export default function Contact() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl w-full"
       >
-        <h2 className="text-4xl md:text-7xl lg:text-[6rem] font-serif leading-[1] mb-8">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl lg:text-[6rem] font-serif leading-[1.1] mb-6 sm:mb-8">
           LET'S BUILD SOMETHING GREAT
         </h2>
-        <p className="text-gray-400 text-lg md:text-2xl font-serif italic mb-16">
+        <p className="text-gray-400 text-base sm:text-lg md:text-2xl font-serif italic mb-10 sm:mb-16">
           "Have an idea, project or collaboration in mind?"
         </p>
         

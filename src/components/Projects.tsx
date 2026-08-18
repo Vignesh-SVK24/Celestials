@@ -12,9 +12,9 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-24"
+          className="text-center mb-12 md:mb-24"
         >
-          <h2 className="text-5xl md:text-8xl font-serif tracking-tight mb-4 uppercase">Our Projects</h2>
+          <h2 className="text-4xl sm:text-6xl md:text-8xl font-serif tracking-tight mb-4 uppercase">Our Projects</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">

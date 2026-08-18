@@ -29,21 +29,21 @@ export default function MemberProfile({ member, onClose }: MemberProfileProps) {
       {/* Close Button */}
       <button 
         onClick={onClose}
-        className="fixed top-8 right-8 z-50 p-4 bg-black text-white rounded-full hover:bg-black/80 transition-colors"
+        className="fixed top-4 right-4 sm:top-8 sm:right-8 z-50 p-3 sm:p-4 bg-black text-white rounded-full hover:bg-black/80 transition-colors shadow-lg"
         aria-label="Close profile"
       >
-        <X size={24} />
+        <X size={20} className="sm:w-6 sm:h-6" />
       </button>
 
-      <div className="container mx-auto px-6 md:px-12 py-24 min-h-screen flex flex-col lg:flex-row gap-16 lg:gap-24">
+      <div className="container mx-auto px-5 sm:px-8 md:px-12 py-16 md:py-24 min-h-screen flex flex-col lg:flex-row gap-10 lg:gap-24">
         
         {/* Left: Image (Arch shaped on desktop) */}
-        <div className="lg:w-2/5 flex flex-col gap-8">
+        <div className="lg:w-2/5 flex flex-col gap-6 sm:gap-8">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="w-full aspect-[3/4] rounded-t-full rounded-b-xl overflow-hidden relative"
+            className="w-full max-w-sm mx-auto lg:max-w-none aspect-[3/4] rounded-t-full rounded-b-2xl overflow-hidden relative shadow-xl"
           >
             <img src={getImageUrl(member.image)} alt={member.name} className="w-full h-full object-cover" />
           </motion.div>
@@ -64,14 +64,14 @@ export default function MemberProfile({ member, onClose }: MemberProfileProps) {
         </div>
 
         {/* Right: Info */}
-        <div className="lg:w-3/5 pb-24">
+        <div className="lg:w-3/5 pb-16 md:pb-24">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            <p className="text-xs tracking-[0.2em] text-gray-500 uppercase mb-4">{member.role}</p>
-            <h2 className="text-5xl md:text-7xl font-serif mb-12">{member.name}</h2>
+            <p className="text-xs tracking-[0.2em] text-gray-500 uppercase mb-3 sm:mb-4">{member.role}</p>
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 sm:mb-12">{member.name}</h2>
 
             {/* Social Links Mobile */}
             <div className="flex lg:hidden gap-6 items-center text-gray-500 mb-12">
