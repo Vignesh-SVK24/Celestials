@@ -142,7 +142,7 @@ export default function MemberProfile({ member, onClose }: MemberProfileProps) {
                           ))}
                         </div>
                         <div className="flex gap-4">
-                          {proj.link !== '#' && <a href={proj.link} className="text-xs font-bold tracking-widest uppercase border-b border-black pb-1 hover:text-gray-500 transition-colors">View Project</a>}
+                          {proj.link !== '#' && <a href={proj.link} target="_blank" rel="noopener noreferrer" className="text-xs font-bold tracking-widest uppercase border-b border-black pb-1 hover:text-gray-500 transition-colors">View Project</a>}
                           {proj.github !== '#' && <a href={proj.github} className="text-xs font-bold tracking-widest uppercase border-b border-black pb-1 hover:text-gray-500 transition-colors">GitHub</a>}
                         </div>
                       </div>

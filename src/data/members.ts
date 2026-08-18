@@ -28,7 +28,7 @@ export type TeamMember = {
 export const members: TeamMember[] = [
   {
     id: 1,
-    name: "Member One",
+    name: "Swathi",
     role: "Team Lead / AI-ML Developer",
     image: "/members/member-1.jpg",
     bio: "I am an AI/ML enthusiast focused on building practical technology solutions. I enjoy combining software development, intelligent systems and creative problem solving.",
@@ -56,15 +56,15 @@ export const members: TeamMember[] = [
       { year: "2025", title: "Game Developer", description: "Created interactive web games including Dino Run and Mystery Word." }
     ],
     projects: [
-      { title: "Tic Tac Toe Game", description: "A classic interactive Tic Tac Toe game with smooth gameplay and AI logic.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "#", github: "#" },
-      { title: "Mystery Word Game", description: "An engaging word guessing game with clue systems and dynamic difficulty.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "#", github: "#" },
-      { title: "Dino Run Game", description: "A fun browser-based endless runner game featuring collision detection and score tracking.", technologies: ["JavaScript", "Canvas API", "CSS3"], link: "#", github: "#" }
+      { title: "Tic Tac Toe Game", description: "A classic interactive Tic Tac Toe game with smooth gameplay and AI logic.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "https://tic-tac-toe-svk.onrender.com/", github: "#" },
+      { title: "Mystery Word Game", description: "An engaging word guessing game with clue systems and dynamic difficulty.", technologies: ["JavaScript", "HTML5", "CSS3"], link: "https://svk-mystery-word-game.onrender.com/", github: "#" },
+      { title: "Dino Run Game", description: "A fun browser-based endless runner game featuring collision detection and score tracking.", technologies: ["JavaScript", "Canvas API", "CSS3"], link: "https://vignesh-svk24.github.io/Dino-Game-/", github: "#" }
     ],
     linkedin: "#", instagram: "#", github: "#", portfolio: "#", email: "mailto:hello@example.com"
   },
   {
     id: 3,
-    name: "Member Three",
+    name: "Yashaswini",
     role: "UI/UX Designer",
     image: "/members/member-3.jpg",
     bio: "Creating beautiful, intentional, and highly functional digital experiences. I focus on editorial layouts and typographic excellence.",
@@ -81,7 +81,7 @@ export const members: TeamMember[] = [
   },
   {
     id: 4,
-    name: "Member Four",
+    name: "Mohammad Fahim Sinan",
     role: "Backend Developer",
     image: "/members/member-4.jpg",
     bio: "Ensuring systems run smoothly and efficiently. Passionate about database design, microservices, and system performance.",
@@ -98,7 +98,7 @@ export const members: TeamMember[] = [
   },
   {
     id: 5,
-    name: "Member Five",
+    name: "Thanush Raja Shankar",
     role: "Data / AI Engineer",
     image: "/members/member-5.jpg",
     bio: "Transforming raw data into actionable insights and robust models. I bridge the gap between data science and production engineering.",
