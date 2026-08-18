@@ -115,9 +115,9 @@ export const members: TeamMember[] = [
   },
   {
     id: 6,
-    name: "Member Six",
+    name: "Sai Venkatesh",
     role: "Creative / Product Designer",
-    image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop",
+    image: "/members/member-6.jpg",
     bio: "Focusing on the intersection of art, technology, and user experience. I bring a cinematic approach to digital product design.",
     skills: ["Creative Direction", "Figma", "After Effects", "Webflow", "Branding", "3D Modeling"],
     achievements: ["Creative Excellence", "Webby Nominee"],
