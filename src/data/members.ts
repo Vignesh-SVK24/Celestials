@@ -75,7 +75,7 @@ export const members: TeamMember[] = [
       { year: "2025", title: "Product Designer", description: "Designed applications for various startups." }
     ],
     projects: [
-      { title: "Aether UI", description: "A minimal component library.", technologies: ["Figma", "React", "Tailwind"], link: "#", github: "#" }
+      { title: "Check-Lizt", description: "An interactive, elegant checklist and task management application designed to organize daily workflows.", technologies: ["JavaScript", "HTML5", "CSS3", "GitHub Pages"], link: "https://yashaswini2803-design.github.io/Check-Lizt/", github: "#" }
     ],
     linkedin: "#", instagram: "#", github: "#", portfolio: "#", email: "mailto:hello@example.com"
   },
